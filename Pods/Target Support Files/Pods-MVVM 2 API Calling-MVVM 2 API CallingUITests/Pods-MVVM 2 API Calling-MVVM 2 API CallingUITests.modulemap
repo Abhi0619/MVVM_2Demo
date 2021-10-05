@@ -1,0 +1,6 @@
+framework module Pods_MVVM_2_API_Calling_MVVM_2_API_CallingUITests {
+  umbrella header "Pods-MVVM 2 API Calling-MVVM 2 API CallingUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
