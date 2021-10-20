@@ -3,9 +3,9 @@ name: Demo
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -14,8 +14,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Force Xcode 11
-      run: sudo xcode-select -switch /Applications/Xcode_13.0.app
+    - name: Force Xcode13 
+      run: sudo xcode-select -switch /Applications/Xcode13.app
     - name: Build
       run: swift build -v
     - name: Run tests
