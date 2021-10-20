@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Force Xcode 13
+    - name: Force Xcode
       run: sudo xcode-select -switch /Applications/Xcode.app
     - name: Build
       run: swift build -v
